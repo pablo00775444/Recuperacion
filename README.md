@@ -21,6 +21,7 @@ ESCRIBIR"Juego terminado puntaje final:",puntaje;
 FinAlgoritmo
 Uploading PSEUDOCODIGO.psc…]()
 
+![Captura de pantalla 2025-03-28 094531](https://github.com/user-attachments/assets/c366ff89-5a59-491e-8080-f8353fc6386e)
 
 
 DIAGRAMA DE FLUJO
