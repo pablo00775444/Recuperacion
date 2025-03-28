@@ -1,167 +1,709 @@
-# Recuperacion_funcionalidad_puntaje_tetris
-En esta recuperacion voy a realizar un pseudocodigo,diagrama de flujo y algoritmo para saber como funciona el puntaje de un juego en este caso,tetris este es un juego donde al completar o 
-acomodar las figuras de cierta manera estas explotaran y se nos otorgara un puntaje 
+![puntaje_culebrita_diagrama_de_flujom](https://github.com/user-attachments/assets/e6679d0d-21f7-4f7c-9f76-eec52412aec6)# Recuperacion_funcionalidad_contador_de_puntos_culebrita
+
+ALGORITMO
+CONTADOR DE PUNTOS 
+-al comer mazanas el jugador recibira un puntaje
+
+VARIABLES DONDE SE GUARDEN LOS PUNTOS 
+Las veriables seran:
+-puntos
+-manzanas_comidas 
+
+INICIALIZAR LAS VARIABLES 
+ El valor de cada variable sera inicializado de esta manera:
+-puntos = 0
+-manzanas_comidas = 0
+
+BIENVENIDA Y INSTRUCCIONES PARA EL JUGADOR 
+Las instrucciones seran claras e intuitivas:
+-Se le da la bienvenida y se le indica lo que queremos que haga 
+-tambien le indicamos que debe presionar las flechas de teclado para moverse y que empiece a ganar puntos 
+
+
+PROCESO
+El proceso que se ejecuta
+-se lee el dato de las manzanas comidas por el jugador
+-se corrobora que el dato sea > 0 
+-luego se toma una desicion 
+-si la condicion se cumple se hara un calculo 
+-si la condicion es falsa o no se cumple se le imprimira un mensaje que le diga que no gano puntos esta vez
+PUNTAJE FINAL 
+-al final si la condicion se cumple se le mostrara el puntaje que obtuvo
+
 
 
 
 PSEUDOCODIGO
-[Algoritmo funcionalidad_puntuaje_tetris
-	DEFINIR puntaje COMO ENTERO;
-	DEFINIR filas_completadas COMO ENTERO;
-	DEFINIR numero COMO ENTERO;
-	filas_completadas = 0;
-	puntaje= 0; 
-	numero=0;
-	ESCRIBIR "Bienvenido a tetris";
-	filas_completadas = numero;
-	SI filas_completadas > 0 ENTONCES
-	puntaje = puntaje + filas_completadas * 100;	
-FinSI
-ESCRIBIR"Juego terminado puntaje final:",puntaje;
+
+[UploAlgoritmo puntaje_culebrita
+		DEFINIR puntos COMO ENTERO;
+		DEFINIR manzanas_comidas COMO ENTERO;
+		puntos = 0;
+		manzanas_comidas = 0;
+		ESCRIBIR "Bienvenido presiona enter para iniciar";
+		ESCRIBIR "Debes mover las fleclas para comer manzanas y empezar a ganar puntos";
+		LEER manzanas_comidas;
+		SI manzanas_comidas > 0 ENTONCES
+			puntos = puntos + manzanas_comidas * 5;
+			ESCRIBIR"Tu puntaje es de: ",puntos;
+		SINO 
+			ESCRIBIR"Nos has ganado puntos esta vez";
+		FinSi
 FinAlgoritmo
-Uploading PSEUDOCODIGO.psc…]()
 
-![Captura de pantalla 2025-03-28 094531](https://github.com/user-attachments/assets/c366ff89-5a59-491e-8080-f8353fc6386e)
+ading puntaje_culebrita.psc…]()
 
 
-DIAGRAMA DE FLUJO
-[U<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.3">
-  <diagram name="Página-1" id="yz_0NU_y8Ucjf3_ebRbI">
-    <mxGraphModel dx="1034" dy="1623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="IrhKcL5lx_eICvQf7MEP-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="IrhKcL5lx_eICvQf7MEP-1" target="IrhKcL5lx_eICvQf7MEP-4" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="IrhKcL5lx_eICvQf7MEP-1" value="INICIO" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="330" y="-550" width="150" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="IrhKcL5lx_eICvQf7MEP-2" value="FIN" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="345" y="1000" width="120" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="IrhKcL5lx_eICvQf7MEP-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="IrhKcL5lx_eICvQf7MEP-4" target="IrhKcL5lx_eICvQf7MEP-5" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="IrhKcL5lx_eICvQf7MEP-4" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;DEFINIR puntaje COMO ENTERO&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="345" y="-430" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="IrhKcL5lx_eICvQf7MEP-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="IrhKcL5lx_eICvQf7MEP-5" target="IrhKcL5lx_eICvQf7MEP-8" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="IrhKcL5lx_eICvQf7MEP-5" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;DEFINIR filas_completadas COMO ENTERO&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="345" y="-330" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="IrhKcL5lx_eICvQf7MEP-8" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;DEFINIR numero COMO ENTERO&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="345" y="-240" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="IrhKcL5lx_eICvQf7MEP-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="IrhKcL5lx_eICvQf7MEP-11" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="405" y="310" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="IrhKcL5lx_eICvQf7MEP-11" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;ESCRIBIR&quot;Bienvenido a tetris &quot;&lt;/font&gt;&lt;/font&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="255" y="180" width="300" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="IrhKcL5lx_eICvQf7MEP-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" target="IrhKcL5lx_eICvQf7MEP-15" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="405" y="370" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="IrhKcL5lx_eICvQf7MEP-16" value="SI" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="IrhKcL5lx_eICvQf7MEP-15" edge="1">
-          <mxGeometry x="0.1053" y="-5" relative="1" as="geometry">
-            <mxPoint x="600" y="540" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="600" y="455" />
-            </Array>
-            <mxPoint x="5" y="-5" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="IrhKcL5lx_eICvQf7MEP-17" value="NO" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="IrhKcL5lx_eICvQf7MEP-15" edge="1">
-          <mxGeometry x="-0.0658" y="-5" relative="1" as="geometry">
-            <mxPoint x="240" y="540" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="241" y="455" />
-            </Array>
-            <mxPoint x="5" y="-5" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="IrhKcL5lx_eICvQf7MEP-15" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;filas_completadas es &amp;gt; 0&lt;/font&gt;&lt;/font&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="315" y="400" width="180" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="IrhKcL5lx_eICvQf7MEP-18" value="ESCRIBIR &quot;No completo ninguna fila&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="150" y="540" width="160" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="IErN1is4IflzrCL0zltt-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="IErN1is4IflzrCL0zltt-11">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="530" y="950" as="targetPoint" />
-            <mxPoint x="630" y="710" as="sourcePoint" />
-            <Array as="points">
-              <mxPoint x="600" y="710" />
-              <mxPoint x="600" y="860" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="IrhKcL5lx_eICvQf7MEP-19" value="ESCRIBIR &quot;su puntaje es ,puntaje&quot;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-          <mxGeometry x="520" y="650" width="180" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="IrhKcL5lx_eICvQf7MEP-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="IrhKcL5lx_eICvQf7MEP-20" target="IrhKcL5lx_eICvQf7MEP-19" edge="1">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="600" y="610" />
-              <mxPoint x="600" y="610" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="IrhKcL5lx_eICvQf7MEP-20" value="puntaje = puntuaje + filas_completadas * 100" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="510" y="540" width="170" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="IErN1is4IflzrCL0zltt-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IErN1is4IflzrCL0zltt-2" target="IErN1is4IflzrCL0zltt-5">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="IErN1is4IflzrCL0zltt-2" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;Filas_completadas=0&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="345" y="-50" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="IErN1is4IflzrCL0zltt-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IrhKcL5lx_eICvQf7MEP-8" target="IErN1is4IflzrCL0zltt-1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="405" y="-60" as="sourcePoint" />
-            <mxPoint x="405" y="180" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="IErN1is4IflzrCL0zltt-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="IErN1is4IflzrCL0zltt-1" target="IErN1is4IflzrCL0zltt-2">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="IErN1is4IflzrCL0zltt-1" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;puntaje=0&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="345" y="-140" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="IErN1is4IflzrCL0zltt-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IErN1is4IflzrCL0zltt-5" target="IrhKcL5lx_eICvQf7MEP-11">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="IErN1is4IflzrCL0zltt-5" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;numero=0&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="345" y="50" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="IErN1is4IflzrCL0zltt-8" value="&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;&lt;font style=&quot;vertical-align: inherit;&quot;&gt;Flas_completadas = numero&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="345" y="310" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="IErN1is4IflzrCL0zltt-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IErN1is4IflzrCL0zltt-11" target="IrhKcL5lx_eICvQf7MEP-2">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="IErN1is4IflzrCL0zltt-11" value="ESCRIBIR &quot;juego terminado su puntaje es:&quot;,puntaje" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
-          <mxGeometry x="302.5" y="830" width="205" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="IErN1is4IflzrCL0zltt-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="IErN1is4IflzrCL0zltt-11">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="210" y="600" as="sourcePoint" />
-            <mxPoint x="300" y="860" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="240" y="600" />
-              <mxPoint x="240" y="860" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
-ploading Diagrama TETRIS.drawio…]()
+![pseudocodigo 2025-03-28 094531](https://github.com/user-attachments/assets/b093a050-5eb7-49de-b756-56d3372ed28d)
 
+
+
+DIAGRAMA DE FLUJO 
+![Uploa<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32.81cm" height="25.22cm" viewBox="0 0 930 715">
+<title>Diagrama de Flujo</title>
+<desc>Picture generated by wxSVG v0101</desc>
+
+<g style="fill:black; stroke:black; stroke-width:1">
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#FFFFFF; fill-opacity:1.00; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M462 65 L462 40" shape-rendering="auto" />
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#FFF2CC; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="306 10 306 40 618 40 618 10 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#FFF2CC; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <ellipse cx="306.00" cy="25.00" rx="15.00" ry="15.00" shape-rendering="auto" />
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#FFF2CC; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <ellipse cx="618.00" cy="25.00" rx="15.00" ry="15.00" shape-rendering="auto" />
+</g>
+<g style="stroke-width:1; stroke-linecap:round; stroke-linejoin:round; fill:#FFF2CC; fill-opacity:1.00; stroke:#BF8428; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M306 10 L618 10" shape-rendering="auto" />
+</g>
+<g style="stroke-width:1; stroke-linecap:round; stroke-linejoin:round; fill:#FFF2CC; fill-opacity:1.00; stroke:#BF8428; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M306 40 L618 40" shape-rendering="auto" />
+</g>
+<g style="stroke-width:1; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#BF8428; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M306.00 10.00 A15.00 15.00 0 0 0 306.00 40.00" shape-rendering="auto" />
+</g>
+<g style="stroke-width:1; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#BF8428; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M618.00 40.00 A15.00 15.00 0 0 0 618.00 10.00" shape-rendering="auto" />
+</g>
+<g style="stroke-width:1; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#BF8428; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <text x="300.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 300.00 30.00)">A</text>
+  <text x="312.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 312.00 30.00)">l</text>
+  <text x="324.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 324.00 30.00)">g</text>
+  <text x="336.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 336.00 30.00)">o</text>
+  <text x="348.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 348.00 30.00)">r</text>
+  <text x="360.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 360.00 30.00)">i</text>
+  <text x="372.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 372.00 30.00)">t</text>
+  <text x="384.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 384.00 30.00)">m</text>
+  <text x="396.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 396.00 30.00)">o</text>
+  <text x="408.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 408.00 30.00)"> </text>
+  <text x="420.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 420.00 30.00)">p</text>
+  <text x="432.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 432.00 30.00)">u</text>
+  <text x="444.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 444.00 30.00)">n</text>
+  <text x="456.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 456.00 30.00)">t</text>
+  <text x="468.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 468.00 30.00)">a</text>
+  <text x="480.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 480.00 30.00)">j</text>
+  <text x="492.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 492.00 30.00)">e</text>
+  <text x="504.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 504.00 30.00)">_</text>
+  <text x="516.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 516.00 30.00)">c</text>
+  <text x="528.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 528.00 30.00)">u</text>
+  <text x="540.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 540.00 30.00)">l</text>
+  <text x="552.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 552.00 30.00)">e</text>
+  <text x="564.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 564.00 30.00)">b</text>
+  <text x="576.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 576.00 30.00)">r</text>
+  <text x="588.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 588.00 30.00)">i</text>
+  <text x="600.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 600.00 30.00)">t</text>
+  <text x="612.00" y="30.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 612.00 30.00)">a</text>
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="462 65 457 60 467 60 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M462 120 L462 95" shape-rendering="auto" />
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#FFFFD8; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="300 65 300 95 624 95 624 65 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#BFBF3B; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="300 65 300 95 624 95 624 65 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+  <text x="306.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 306.00 85.00)">D</text>
+  <text x="318.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 318.00 85.00)">e</text>
+  <text x="330.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 330.00 85.00)">f</text>
+  <text x="342.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 342.00 85.00)">i</text>
+  <text x="354.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 354.00 85.00)">n</text>
+  <text x="366.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 366.00 85.00)">i</text>
+  <text x="378.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 378.00 85.00)">r</text>
+  <text x="390.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 390.00 85.00)"> </text>
+  <text x="402.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 402.00 85.00)">p</text>
+  <text x="414.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 414.00 85.00)">u</text>
+  <text x="426.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 426.00 85.00)">n</text>
+  <text x="438.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 438.00 85.00)">t</text>
+  <text x="450.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 450.00 85.00)">o</text>
+  <text x="462.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 462.00 85.00)">s</text>
+  <text x="474.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 474.00 85.00)"> </text>
+  <text x="486.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 486.00 85.00)">C</text>
+  <text x="498.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 498.00 85.00)">o</text>
+  <text x="510.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 510.00 85.00)">m</text>
+  <text x="522.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 522.00 85.00)">o</text>
+  <text x="534.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 534.00 85.00)"> </text>
+  <text x="546.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 546.00 85.00)">E</text>
+  <text x="558.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 558.00 85.00)">n</text>
+  <text x="570.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 570.00 85.00)">t</text>
+  <text x="582.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 582.00 85.00)">e</text>
+  <text x="594.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 594.00 85.00)">r</text>
+  <text x="606.00" y="85.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 606.00 85.00)">o</text>
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="462 120 457 115 467 115 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M462 175 L462 150" shape-rendering="auto" />
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#FFFFD8; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="240 120 240 150 684 150 684 120 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#BFBF3B; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="240 120 240 150 684 150 684 120 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+  <text x="246.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 246.00 140.00)">D</text>
+  <text x="258.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 258.00 140.00)">e</text>
+  <text x="270.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 270.00 140.00)">f</text>
+  <text x="282.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 282.00 140.00)">i</text>
+  <text x="294.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 294.00 140.00)">n</text>
+  <text x="306.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 306.00 140.00)">i</text>
+  <text x="318.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 318.00 140.00)">r</text>
+  <text x="330.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 330.00 140.00)"> </text>
+  <text x="342.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 342.00 140.00)">m</text>
+  <text x="354.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 354.00 140.00)">a</text>
+  <text x="366.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 366.00 140.00)">n</text>
+  <text x="378.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 378.00 140.00)">z</text>
+  <text x="390.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 390.00 140.00)">a</text>
+  <text x="402.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 402.00 140.00)">n</text>
+  <text x="414.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 414.00 140.00)">a</text>
+  <text x="426.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 426.00 140.00)">s</text>
+  <text x="438.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 438.00 140.00)">_</text>
+  <text x="450.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 450.00 140.00)">c</text>
+  <text x="462.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 462.00 140.00)">o</text>
+  <text x="474.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 474.00 140.00)">m</text>
+  <text x="486.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 486.00 140.00)">i</text>
+  <text x="498.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 498.00 140.00)">d</text>
+  <text x="510.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 510.00 140.00)">a</text>
+  <text x="522.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 522.00 140.00)">s</text>
+  <text x="534.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 534.00 140.00)"> </text>
+  <text x="546.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 546.00 140.00)">C</text>
+  <text x="558.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 558.00 140.00)">o</text>
+  <text x="570.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 570.00 140.00)">m</text>
+  <text x="582.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 582.00 140.00)">o</text>
+  <text x="594.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 594.00 140.00)"> </text>
+  <text x="606.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 606.00 140.00)">E</text>
+  <text x="618.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 618.00 140.00)">n</text>
+  <text x="630.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 630.00 140.00)">t</text>
+  <text x="642.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 642.00 140.00)">e</text>
+  <text x="654.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 654.00 140.00)">r</text>
+  <text x="666.00" y="140.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 666.00 140.00)">o</text>
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="462 175 457 170 467 170 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M462 230 L462 205" shape-rendering="auto" />
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#FFFFD8; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="396 175 396 205 528 205 528 175 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#BFBF3B; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="396 175 396 205 528 205 528 175 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+  <text x="402.00" y="195.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 402.00 195.00)">p</text>
+  <text x="414.00" y="195.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 414.00 195.00)">u</text>
+  <text x="426.00" y="195.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 426.00 195.00)">n</text>
+  <text x="438.00" y="195.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 438.00 195.00)">t</text>
+  <text x="450.00" y="195.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 450.00 195.00)">o</text>
+  <text x="462.00" y="195.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 462.00 195.00)">s</text>
+  <text x="474.00" y="195.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 474.00 195.00)"> </text>
+  <text x="486.00" y="195.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 486.00 195.00)">←</text>
+  <text x="498.00" y="195.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 498.00 195.00)"> </text>
+  <text x="510.00" y="195.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#A0522D; fill-opacity:1.00; stroke:#A0522D; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 510.00 195.00)">0</text>
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="462 230 457 225 467 225 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M462 285 L462 260" shape-rendering="auto" />
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#FFFFD8; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="336 230 336 260 588 260 588 230 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#BFBF3B; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="336 230 336 260 588 260 588 230 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+  <text x="342.00" y="250.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 342.00 250.00)">m</text>
+  <text x="354.00" y="250.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 354.00 250.00)">a</text>
+  <text x="366.00" y="250.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 366.00 250.00)">n</text>
+  <text x="378.00" y="250.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 378.00 250.00)">z</text>
+  <text x="390.00" y="250.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 390.00 250.00)">a</text>
+  <text x="402.00" y="250.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 402.00 250.00)">n</text>
+  <text x="414.00" y="250.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 414.00 250.00)">a</text>
+  <text x="426.00" y="250.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 426.00 250.00)">s</text>
+  <text x="438.00" y="250.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 438.00 250.00)">_</text>
+  <text x="450.00" y="250.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 450.00 250.00)">c</text>
+  <text x="462.00" y="250.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 462.00 250.00)">o</text>
+  <text x="474.00" y="250.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 474.00 250.00)">m</text>
+  <text x="486.00" y="250.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 486.00 250.00)">i</text>
+  <text x="498.00" y="250.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 498.00 250.00)">d</text>
+  <text x="510.00" y="250.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 510.00 250.00)">a</text>
+  <text x="522.00" y="250.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 522.00 250.00)">s</text>
+  <text x="534.00" y="250.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 534.00 250.00)"> </text>
+  <text x="546.00" y="250.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 546.00 250.00)">←</text>
+  <text x="558.00" y="250.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 558.00 250.00)"> </text>
+  <text x="570.00" y="250.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#A0522D; fill-opacity:1.00; stroke:#A0522D; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 570.00 250.00)">0</text>
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="462 285 457 280 467 280 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M462 340 L462 315" shape-rendering="auto" />
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#E5FFE5; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="720 285 216 285 204 315 708 315 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#5ABF5A; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="720 285 216 285 204 315 708 315 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#000080; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M708 291 L720 279" shape-rendering="auto" />
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#000080; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M720 279 L714 279" shape-rendering="auto" />
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#000080; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M720 279 L720 285" shape-rendering="auto" />
+  <text x="222.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 222.00 305.00)">&apos;</text>
+  <text x="234.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 234.00 305.00)">B</text>
+  <text x="246.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 246.00 305.00)">i</text>
+  <text x="258.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 258.00 305.00)">e</text>
+  <text x="270.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 270.00 305.00)">n</text>
+  <text x="282.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 282.00 305.00)">v</text>
+  <text x="294.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 294.00 305.00)">e</text>
+  <text x="306.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 306.00 305.00)">n</text>
+  <text x="318.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 318.00 305.00)">i</text>
+  <text x="330.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 330.00 305.00)">d</text>
+  <text x="342.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 342.00 305.00)">o</text>
+  <text x="354.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 354.00 305.00)"> </text>
+  <text x="366.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 366.00 305.00)">p</text>
+  <text x="378.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 378.00 305.00)">r</text>
+  <text x="390.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 390.00 305.00)">e</text>
+  <text x="402.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 402.00 305.00)">s</text>
+  <text x="414.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 414.00 305.00)">i</text>
+  <text x="426.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 426.00 305.00)">o</text>
+  <text x="438.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 438.00 305.00)">n</text>
+  <text x="450.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 450.00 305.00)">a</text>
+  <text x="462.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 462.00 305.00)"> </text>
+  <text x="474.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 474.00 305.00)">e</text>
+  <text x="486.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 486.00 305.00)">n</text>
+  <text x="498.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 498.00 305.00)">t</text>
+  <text x="510.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 510.00 305.00)">e</text>
+  <text x="522.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 522.00 305.00)">r</text>
+  <text x="534.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 534.00 305.00)"> </text>
+  <text x="546.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 546.00 305.00)">p</text>
+  <text x="558.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 558.00 305.00)">a</text>
+  <text x="570.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 570.00 305.00)">r</text>
+  <text x="582.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 582.00 305.00)">a</text>
+  <text x="594.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 594.00 305.00)"> </text>
+  <text x="606.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 606.00 305.00)">i</text>
+  <text x="618.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 618.00 305.00)">n</text>
+  <text x="630.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 630.00 305.00)">i</text>
+  <text x="642.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 642.00 305.00)">c</text>
+  <text x="654.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 654.00 305.00)">i</text>
+  <text x="666.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 666.00 305.00)">a</text>
+  <text x="678.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 678.00 305.00)">r</text>
+  <text x="690.00" y="305.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 690.00 305.00)">&apos;</text>
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="462 340 457 335 467 335 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M462 395 L462 370" shape-rendering="auto" />
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#E5FFE5; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="900 340 36 340 24 370 888 370 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#5ABF5A; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="900 340 36 340 24 370 888 370 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#000080; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M888 346 L900 334" shape-rendering="auto" />
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#000080; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M900 334 L894 334" shape-rendering="auto" />
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#000080; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M900 334 L900 340" shape-rendering="auto" />
+  <text x="42.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 42.00 360.00)">&apos;</text>
+  <text x="54.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 54.00 360.00)">D</text>
+  <text x="66.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 66.00 360.00)">e</text>
+  <text x="78.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 78.00 360.00)">b</text>
+  <text x="90.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 90.00 360.00)">e</text>
+  <text x="102.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 102.00 360.00)">s</text>
+  <text x="114.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 114.00 360.00)"> </text>
+  <text x="126.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 126.00 360.00)">m</text>
+  <text x="138.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 138.00 360.00)">o</text>
+  <text x="150.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 150.00 360.00)">v</text>
+  <text x="162.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 162.00 360.00)">e</text>
+  <text x="174.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 174.00 360.00)">r</text>
+  <text x="186.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 186.00 360.00)"> </text>
+  <text x="198.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 198.00 360.00)">l</text>
+  <text x="210.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 210.00 360.00)">a</text>
+  <text x="222.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 222.00 360.00)">s</text>
+  <text x="234.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 234.00 360.00)"> </text>
+  <text x="246.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 246.00 360.00)">f</text>
+  <text x="258.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 258.00 360.00)">l</text>
+  <text x="270.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 270.00 360.00)">e</text>
+  <text x="282.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 282.00 360.00)">c</text>
+  <text x="294.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 294.00 360.00)">l</text>
+  <text x="306.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 306.00 360.00)">a</text>
+  <text x="318.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 318.00 360.00)">s</text>
+  <text x="330.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 330.00 360.00)"> </text>
+  <text x="342.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 342.00 360.00)">p</text>
+  <text x="354.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 354.00 360.00)">a</text>
+  <text x="366.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 366.00 360.00)">r</text>
+  <text x="378.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 378.00 360.00)">a</text>
+  <text x="390.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 390.00 360.00)"> </text>
+  <text x="402.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 402.00 360.00)">c</text>
+  <text x="414.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 414.00 360.00)">o</text>
+  <text x="426.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 426.00 360.00)">m</text>
+  <text x="438.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 438.00 360.00)">e</text>
+  <text x="450.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 450.00 360.00)">r</text>
+  <text x="462.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 462.00 360.00)"> </text>
+  <text x="474.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 474.00 360.00)">m</text>
+  <text x="486.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 486.00 360.00)">a</text>
+  <text x="498.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 498.00 360.00)">n</text>
+  <text x="510.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 510.00 360.00)">z</text>
+  <text x="522.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 522.00 360.00)">a</text>
+  <text x="534.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 534.00 360.00)">n</text>
+  <text x="546.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 546.00 360.00)">a</text>
+  <text x="558.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 558.00 360.00)">s</text>
+  <text x="570.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 570.00 360.00)"> </text>
+  <text x="582.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 582.00 360.00)">y</text>
+  <text x="594.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 594.00 360.00)"> </text>
+  <text x="606.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 606.00 360.00)">e</text>
+  <text x="618.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 618.00 360.00)">m</text>
+  <text x="630.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 630.00 360.00)">p</text>
+  <text x="642.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 642.00 360.00)">e</text>
+  <text x="654.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 654.00 360.00)">z</text>
+  <text x="666.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 666.00 360.00)">a</text>
+  <text x="678.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 678.00 360.00)">r</text>
+  <text x="690.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 690.00 360.00)"> </text>
+  <text x="702.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 702.00 360.00)">a</text>
+  <text x="714.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 714.00 360.00)"> </text>
+  <text x="726.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 726.00 360.00)">g</text>
+  <text x="738.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 738.00 360.00)">a</text>
+  <text x="750.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 750.00 360.00)">n</text>
+  <text x="762.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 762.00 360.00)">a</text>
+  <text x="774.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 774.00 360.00)">r</text>
+  <text x="786.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 786.00 360.00)"> </text>
+  <text x="798.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 798.00 360.00)">p</text>
+  <text x="810.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 810.00 360.00)">u</text>
+  <text x="822.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 822.00 360.00)">n</text>
+  <text x="834.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 834.00 360.00)">t</text>
+  <text x="846.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 846.00 360.00)">o</text>
+  <text x="858.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 858.00 360.00)">s</text>
+  <text x="870.00" y="360.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 870.00 360.00)">&apos;</text>
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="462 395 457 390 467 390 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M462 450 L462 425" shape-rendering="auto" />
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#FFE5F2; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="576 395 360 395 348 425 564 425 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#BF5A84; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="576 395 360 395 348 425 564 425 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#000080; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M564 401 L576 389" shape-rendering="auto" />
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#000080; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M564 401 L570 401" shape-rendering="auto" />
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#000080; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M564 401 L564 395" shape-rendering="auto" />
+  <text x="366.00" y="415.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 366.00 415.00)">m</text>
+  <text x="378.00" y="415.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 378.00 415.00)">a</text>
+  <text x="390.00" y="415.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 390.00 415.00)">n</text>
+  <text x="402.00" y="415.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 402.00 415.00)">z</text>
+  <text x="414.00" y="415.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 414.00 415.00)">a</text>
+  <text x="426.00" y="415.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 426.00 415.00)">n</text>
+  <text x="438.00" y="415.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 438.00 415.00)">a</text>
+  <text x="450.00" y="415.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 450.00 415.00)">s</text>
+  <text x="462.00" y="415.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 462.00 415.00)">_</text>
+  <text x="474.00" y="415.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 474.00 415.00)">c</text>
+  <text x="486.00" y="415.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 486.00 415.00)">o</text>
+  <text x="498.00" y="415.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 498.00 415.00)">m</text>
+  <text x="510.00" y="415.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 510.00 415.00)">i</text>
+  <text x="522.00" y="415.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 522.00 415.00)">d</text>
+  <text x="534.00" y="415.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 534.00 415.00)">a</text>
+  <text x="546.00" y="415.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 546.00 415.00)">s</text>
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M700 475 L697 465" shape-rendering="auto" />
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M700 475 L703 465" shape-rendering="auto" />
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M222 475 L222 465" shape-rendering="auto" />
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M222 465 L226 465" shape-rendering="auto" />
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M222 470 L226 470" shape-rendering="auto" />
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M214 480 L710 480" shape-rendering="auto" />
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M214 480 L214 535" shape-rendering="auto" />
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M214 590 L214 645" shape-rendering="auto" />
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="214 645 209 640 219 640 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M710 480 L710 535" shape-rendering="auto" />
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M710 645 L710 645" shape-rendering="auto" />
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="710 645 705 640 715 640 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M214 645 L710 645" shape-rendering="auto" />
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="462 450 457 445 467 445 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M462 670 L462 645" shape-rendering="auto" />
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#D8E5FF; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="462 450 690 480 462 510 234 480 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#3B5ABF; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="462 450 690 480 462 510 234 480 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+  <text x="354.00" y="485.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 354.00 485.00)">m</text>
+  <text x="366.00" y="485.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 366.00 485.00)">a</text>
+  <text x="378.00" y="485.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 378.00 485.00)">n</text>
+  <text x="390.00" y="485.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 390.00 485.00)">z</text>
+  <text x="402.00" y="485.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 402.00 485.00)">a</text>
+  <text x="414.00" y="485.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 414.00 485.00)">n</text>
+  <text x="426.00" y="485.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 426.00 485.00)">a</text>
+  <text x="438.00" y="485.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 438.00 485.00)">s</text>
+  <text x="450.00" y="485.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 450.00 485.00)">_</text>
+  <text x="462.00" y="485.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 462.00 485.00)">c</text>
+  <text x="474.00" y="485.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 474.00 485.00)">o</text>
+  <text x="486.00" y="485.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 486.00 485.00)">m</text>
+  <text x="498.00" y="485.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 498.00 485.00)">i</text>
+  <text x="510.00" y="485.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 510.00 485.00)">d</text>
+  <text x="522.00" y="485.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 522.00 485.00)">a</text>
+  <text x="534.00" y="485.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 534.00 485.00)">s</text>
+  <text x="546.00" y="485.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 546.00 485.00)">&gt;</text>
+  <text x="558.00" y="485.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#A0522D; fill-opacity:1.00; stroke:#A0522D; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 558.00 485.00)">0</text>
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="214 535 209 530 219 530 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M214 590 L214 565" shape-rendering="auto" />
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#E5FFE5; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="424 535 16 535 4 565 412 565 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#5ABF5A; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="424 535 16 535 4 565 412 565 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#000080; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M412 541 L424 529" shape-rendering="auto" />
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#000080; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M424 529 L418 529" shape-rendering="auto" />
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#000080; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M424 529 L424 535" shape-rendering="auto" />
+  <text x="22.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 22.00 555.00)">&apos;</text>
+  <text x="34.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 34.00 555.00)">N</text>
+  <text x="46.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 46.00 555.00)">o</text>
+  <text x="58.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 58.00 555.00)">s</text>
+  <text x="70.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 70.00 555.00)"> </text>
+  <text x="82.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 82.00 555.00)">h</text>
+  <text x="94.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 94.00 555.00)">a</text>
+  <text x="106.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 106.00 555.00)">s</text>
+  <text x="118.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 118.00 555.00)"> </text>
+  <text x="130.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 130.00 555.00)">g</text>
+  <text x="142.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 142.00 555.00)">a</text>
+  <text x="154.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 154.00 555.00)">n</text>
+  <text x="166.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 166.00 555.00)">a</text>
+  <text x="178.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 178.00 555.00)">d</text>
+  <text x="190.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 190.00 555.00)">o</text>
+  <text x="202.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 202.00 555.00)"> </text>
+  <text x="214.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 214.00 555.00)">p</text>
+  <text x="226.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 226.00 555.00)">u</text>
+  <text x="238.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 238.00 555.00)">n</text>
+  <text x="250.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 250.00 555.00)">t</text>
+  <text x="262.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 262.00 555.00)">o</text>
+  <text x="274.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 274.00 555.00)">s</text>
+  <text x="286.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 286.00 555.00)"> </text>
+  <text x="298.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 298.00 555.00)">e</text>
+  <text x="310.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 310.00 555.00)">s</text>
+  <text x="322.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 322.00 555.00)">t</text>
+  <text x="334.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 334.00 555.00)">a</text>
+  <text x="346.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 346.00 555.00)"> </text>
+  <text x="358.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 358.00 555.00)">v</text>
+  <text x="370.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 370.00 555.00)">e</text>
+  <text x="382.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 382.00 555.00)">z</text>
+  <text x="394.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 394.00 555.00)">&apos;</text>
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="710 535 705 530 715 530 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M710 590 L710 565" shape-rendering="auto" />
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#FFFFD8; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="500 535 500 565 920 565 920 535 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#BFBF3B; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="500 535 500 565 920 565 920 535 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+  <text x="506.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 506.00 555.00)">p</text>
+  <text x="518.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 518.00 555.00)">u</text>
+  <text x="530.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 530.00 555.00)">n</text>
+  <text x="542.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 542.00 555.00)">t</text>
+  <text x="554.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 554.00 555.00)">o</text>
+  <text x="566.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 566.00 555.00)">s</text>
+  <text x="578.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 578.00 555.00)"> </text>
+  <text x="590.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 590.00 555.00)">←</text>
+  <text x="602.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 602.00 555.00)"> </text>
+  <text x="614.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 614.00 555.00)">p</text>
+  <text x="626.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 626.00 555.00)">u</text>
+  <text x="638.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 638.00 555.00)">n</text>
+  <text x="650.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 650.00 555.00)">t</text>
+  <text x="662.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 662.00 555.00)">o</text>
+  <text x="674.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 674.00 555.00)">s</text>
+  <text x="686.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 686.00 555.00)">+</text>
+  <text x="698.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 698.00 555.00)">m</text>
+  <text x="710.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 710.00 555.00)">a</text>
+  <text x="722.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 722.00 555.00)">n</text>
+  <text x="734.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 734.00 555.00)">z</text>
+  <text x="746.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 746.00 555.00)">a</text>
+  <text x="758.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 758.00 555.00)">n</text>
+  <text x="770.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 770.00 555.00)">a</text>
+  <text x="782.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 782.00 555.00)">s</text>
+  <text x="794.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 794.00 555.00)">_</text>
+  <text x="806.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 806.00 555.00)">c</text>
+  <text x="818.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 818.00 555.00)">o</text>
+  <text x="830.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 830.00 555.00)">m</text>
+  <text x="842.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 842.00 555.00)">i</text>
+  <text x="854.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 854.00 555.00)">d</text>
+  <text x="866.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 866.00 555.00)">a</text>
+  <text x="878.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 878.00 555.00)">s</text>
+  <text x="890.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 890.00 555.00)">*</text>
+  <text x="902.00" y="555.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#A0522D; fill-opacity:1.00; stroke:#A0522D; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 902.00 555.00)">5</text>
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="710 590 705 585 715 585 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#CC0000; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M710 645 L710 620" shape-rendering="auto" />
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#E5FFE5; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="896 590 536 590 524 620 884 620 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:1; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#5ABF5A; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="896 590 536 590 524 620 884 620 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#000080; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M884 596 L896 584" shape-rendering="auto" />
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#000080; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M896 584 L890 584" shape-rendering="auto" />
+</g>
+<g style="stroke-width:2; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#000080; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M896 584 L896 590" shape-rendering="auto" />
+  <text x="542.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 542.00 610.00)">&apos;</text>
+  <text x="554.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 554.00 610.00)">T</text>
+  <text x="566.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 566.00 610.00)">u</text>
+  <text x="578.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 578.00 610.00)"> </text>
+  <text x="590.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 590.00 610.00)">p</text>
+  <text x="602.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 602.00 610.00)">u</text>
+  <text x="614.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 614.00 610.00)">n</text>
+  <text x="626.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 626.00 610.00)">t</text>
+  <text x="638.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 638.00 610.00)">a</text>
+  <text x="650.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 650.00 610.00)">j</text>
+  <text x="662.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 662.00 610.00)">e</text>
+  <text x="674.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 674.00 610.00)"> </text>
+  <text x="686.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 686.00 610.00)">e</text>
+  <text x="698.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 698.00 610.00)">s</text>
+  <text x="710.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 710.00 610.00)"> </text>
+  <text x="722.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 722.00 610.00)">d</text>
+  <text x="734.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 734.00 610.00)">e</text>
+  <text x="746.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 746.00 610.00)">:</text>
+  <text x="758.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 758.00 610.00)"> </text>
+  <text x="770.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#006400; fill-opacity:1.00; stroke:#006400; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 770.00 610.00)">&apos;</text>
+  <text x="782.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 782.00 610.00)">,</text>
+  <text x="794.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 794.00 610.00)"> </text>
+  <text x="806.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 806.00 610.00)">p</text>
+  <text x="818.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 818.00 610.00)">u</text>
+  <text x="830.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 830.00 610.00)">n</text>
+  <text x="842.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 842.00 610.00)">t</text>
+  <text x="854.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 854.00 610.00)">o</text>
+  <text x="866.00" y="610.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000000; fill-opacity:1.00; stroke:#000000; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 866.00 610.00)">s</text>
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#CC0000; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="462 670 457 665 467 665 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#FFF2CC; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <polygon points="396 670 396 700 528 700 528 670 " shape-rendering="auto"   style="fill-rule:evenodd;"/>
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#FFF2CC; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <ellipse cx="396.00" cy="685.00" rx="15.00" ry="15.00" shape-rendering="auto" />
+</g>
+<g style="stroke-width:0; stroke-linecap:round; stroke-linejoin:round; fill:#FFF2CC; fill-opacity:1.00; stroke:#000000; stroke-opacity:0.0;" transform="translate(0 0) scale(1.00 1.00)">
+  <ellipse cx="528.00" cy="685.00" rx="15.00" ry="15.00" shape-rendering="auto" />
+</g>
+<g style="stroke-width:1; stroke-linecap:round; stroke-linejoin:round; fill:#FFF2CC; fill-opacity:1.00; stroke:#BF8428; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M396 670 L528 670" shape-rendering="auto" />
+</g>
+<g style="stroke-width:1; stroke-linecap:round; stroke-linejoin:round; fill:#FFF2CC; fill-opacity:1.00; stroke:#BF8428; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M396 700 L528 700" shape-rendering="auto" />
+</g>
+<g style="stroke-width:1; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#BF8428; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M396.00 670.00 A15.00 15.00 0 0 0 396.00 700.00" shape-rendering="auto" />
+</g>
+<g style="stroke-width:1; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#BF8428; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <path d="M528.00 700.00 A15.00 15.00 0 0 0 528.00 670.00" shape-rendering="auto" />
+</g>
+<g style="stroke-width:1; stroke-linecap:round; stroke-linejoin:round; fill:#000000; fill-opacity:0.0; stroke:#BF8428; stroke-opacity:1.00;" transform="translate(0 0) scale(1.00 1.00)">
+  <text x="390.00" y="690.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 390.00 690.00)">F</text>
+  <text x="402.00" y="690.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 402.00 690.00)">i</text>
+  <text x="414.00" y="690.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 414.00 690.00)">n</text>
+  <text x="426.00" y="690.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 426.00 690.00)">A</text>
+  <text x="438.00" y="690.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 438.00 690.00)">l</text>
+  <text x="450.00" y="690.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 450.00 690.00)">g</text>
+  <text x="462.00" y="690.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 462.00 690.00)">o</text>
+  <text x="474.00" y="690.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 474.00 690.00)">r</text>
+  <text x="486.00" y="690.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 486.00 690.00)">i</text>
+  <text x="498.00" y="690.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 498.00 690.00)">t</text>
+  <text x="510.00" y="690.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 510.00 690.00)">m</text>
+  <text x="522.00" y="690.00" textLength="10" style="font-family:Inconsolata; font-weight:400; font-style:normal; font-size:16.00pt; text-decoration: none; fill:#000080; fill-opacity:1.00; stroke:#000080; stroke-opacity:1.00; stroke-width:0; white-space: pre;" xml:space="preserve" transform="rotate(0.00 522.00 690.00)">o</text>
+</g>
+</svg>
+ding puntaje_culebrita_diagrama_de_flujom.svg…]()
