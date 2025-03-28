@@ -1,4 +1,4 @@
-![puntaje_culebrita_diagrama_de_flujom](https://github.com/user-attachments/assets/e6679d0d-21f7-4f7c-9f76-eec52412aec6)# Recuperacion_funcionalidad_contador_de_puntos_culebrita
+# Recuperacion_funcionalidad_contador_de_puntos_culebrita
 
 ALGORITMO
 CONTADOR DE PUNTOS 
@@ -19,7 +19,6 @@ Las instrucciones seran claras e intuitivas:
 -Se le da la bienvenida y se le indica lo que queremos que haga 
 -tambien le indicamos que debe presionar las flechas de teclado para moverse y que empiece a ganar puntos 
 
-
 PROCESO
 El proceso que se ejecuta
 -se lee el dato de las manzanas comidas por el jugador
@@ -27,9 +26,9 @@ El proceso que se ejecuta
 -luego se toma una desicion 
 -si la condicion se cumple se hara un calculo 
 -si la condicion es falsa o no se cumple se le imprimira un mensaje que le diga que no gano puntos esta vez
+
 PUNTAJE FINAL 
 -al final si la condicion se cumple se le mostrara el puntaje que obtuvo
-
 
 
 
