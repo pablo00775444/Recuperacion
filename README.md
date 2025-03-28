@@ -57,7 +57,10 @@ ading puntaje_culebrita.psc…]()
 
 
 
+
 DIAGRAMA DE FLUJO 
+
+
 ![DIAGRMA DE FLUJO  2025-03-28 120533](https://github.com/user-attachments/assets/89edc274-068b-45e3-b034-0d85c1a58165)
 
 ![DIAGRAMA  2025-03-28 120352](https://github.com/user-attachments/assets/6ac0b0d9-6f7a-40a4-9f66-aec1b31ec480)
